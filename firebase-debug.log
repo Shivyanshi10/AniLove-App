@@ -1,0 +1,22 @@
+[debug] [2024-06-05T16:53:57.541Z] ----------------------------------------------------------------------
+[debug] [2024-06-05T16:53:57.543Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Pranjal Kumar Rai\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create android anilove (android) --package-name=com.example.anilove --json --project=anilove-f0fcb
+[debug] [2024-06-05T16:53:57.543Z] CLI Version:   13.10.2
+[debug] [2024-06-05T16:53:57.543Z] Platform:      win32
+[debug] [2024-06-05T16:53:57.544Z] Node Version:  v20.14.0
+[debug] [2024-06-05T16:53:57.544Z] Time:          Wed Jun 05 2024 22:23:57 GMT+0530 (India Standard Time)
+[debug] [2024-06-05T16:53:57.544Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-05T16:53:57.551Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-05T16:53:57.552Z] > authorizing via signed-in user (kumarishivyanshi.22.mcav@acharya.ac.in)
+[info] Create your ANDROID app in project anilove-f0fcb:
+[debug] [2024-06-05T16:53:57.556Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/anilove-f0fcb/androidApps [none]
+[debug] [2024-06-05T16:53:57.556Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/anilove-f0fcb/androidApps {"displayName":"anilove (android)","packageName":"com.example.anilove"}
+[debug] [2024-06-05T16:53:58.687Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/anilove-f0fcb/androidApps 409
+[debug] [2024-06-05T16:53:58.687Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/anilove-f0fcb/androidApps {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-06-05T16:53:58.688Z] HTTP Error: 409, Requested entity already exists
+[debug] [2024-06-05T16:53:59.030Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\Pranjal Kumar Rai\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Pranjal Kumar Rai\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create Android app for project anilove-f0fcb. See firebase-debug.log for more info.
